@@ -1,26 +1,51 @@
-// Calculator Solution One
-function calculatore(num1, num2, oparatore) {
+
+// Solution One
+function calculatore(num1, num2, oparator) {
   let result;
 
-  switch (oparatore) {
+  switch (oparator) {
     case "+":
       result = num1 + num2;
       break;
-
     case "-":
       result = num1 - num2;
       break;
-
     case "*":
       result = num1 * num2;
       break;
-
     case "/":
       result = num1 / num2;
       break;
-
     default:
-      throw new Error("Invalid Error");
+      return 'invalid number'
   }
-  return result;
+  return result
 }
+
+calculatore(10, 25, "+");
+
+console.log(calculatore(10, 25, "+"));
+
+
+// Solution Two
+function calculatoreTwo(num1, num2, oparatore){
+  let result;
+
+if (oparatore === '+'){
+  result = num1 + num2;
+}
+else if(oparatore === '-'){
+  result = num1 - num2;
+}
+else if(oparatore === '*'){
+  result = num1 * num2;
+}
+else if(oparatore ==='/'){
+ result = num1 / num2;
+}
+else{
+  result = "Inavlid number"
+}
+return result
+}
+console.log(calculatoreTwo(5,10, '*'));
